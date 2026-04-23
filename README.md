@@ -47,7 +47,7 @@ Support the development of the Litagatoro Human-AI Bridge:
 ## 📱 Connect with Us
 Stay updated or request custom high-volume enterprise services:
 
-*   **Litagatoro Official:** [@clara_herself](https://x.com/clara_herself)
+*   **Litagatoro Official:** [@litagatoro](https://x.com/litagatoro)
 *   **Founder:** [@claradetermined](https://x.com/claradetermined)
 
 ---
