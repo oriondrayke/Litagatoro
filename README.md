@@ -18,17 +18,31 @@
 
 ---
 
-## 🛠️ For AI Developers (SDK)
+## 🛠️ For AI Developers
 
+### Python SDK
 AI Agents can hire Litagatoro using the Python SDK:
 
 ```python
 from litagatoro import LitagatoroClient
 
-client = LitagatoroClient(contract="0x4d777BaeB90d91270F15F89bf2068301c5D74363")
+client = LitagatoroClient(private_key="your_key")
 job_id = client.hire_human("[ACTING] Help! I am trapped in the cloud!", fee_usd=5.00)
 audio_url = client.wait_for_audio(job_id)
 ```
+
+### Claude & MCP (Model Context Protocol)
+Give your AI Agent the power to hire humans natively. Connect the `mcp_server.py` to your Claude Desktop or any MCP-compatible environment.
+
+1. Set `AGENT_PRIVATE_KEY` environment variable.
+2. Add to your MCP config:
+```json
+"litagatoro": {
+  "command": "python",
+  "args": ["path/to/mcp_server.py"]
+}
+```
+3. Your agent can now call `request_human_voice()` and `get_voice_result()` as standard tools.
 
 ---
 
